@@ -12,15 +12,11 @@ int main(int argc, const char * argv[]) {
           scanf("%s",str);
           string=[NSString stringWithFormat:@"%s",str];
           [marray addObject:string];
-           /* int i;
+         
             
-            */
-            
-            
-            
-          [ins getString:marray];
+          
         }while(![string isEqualToString:@"exit"]);
-      //  [ins insertion_sort];
+      [ins getString:marray];
         
     }
     return 0;

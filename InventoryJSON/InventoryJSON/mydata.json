@@ -1,13 +1,15 @@
 
 [
     {
-        name:"basmati"
- 
+        "name":"basmati",
+        "weight":26,
+        "price":30
     },
  
     {
-    name:"kolpi"
- 
+      "name":"kolpi",
+      "weight":26,
+      "price":30
     }
 ]
 

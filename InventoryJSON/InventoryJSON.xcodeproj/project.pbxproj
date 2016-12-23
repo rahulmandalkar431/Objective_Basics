@@ -6,11 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		0A5933BE1E0BAC28006AF1FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5933BD1E0BAC28006AF1FF /* main.m */; };
-		0A5933C61E0BAC64006AF1FF /* Inventory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5933C51E0BAC64006AF1FF /* Inventory.m */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		0A5933B81E0BAC28006AF1FF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -24,11 +19,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A5933BA1E0BAC28006AF1FF /* InventoryJSON */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = InventoryJSON; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A5933BD1E0BAC28006AF1FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0A5933C41E0BAC47006AF1FF /* Inventory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Inventory.h; sourceTree = "<group>"; };
-		0A5933C51E0BAC64006AF1FF /* Inventory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Inventory.m; sourceTree = "<group>"; };
-		0A5933C71E0BACB2006AF1FF /* mydata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mydata.json; sourceTree = "<group>"; };
+		0A5933BA1E0BAC28006AF1FF /* InventoryJSON */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = InventoryJSON; path = /Users/bridgelabz/Documents/Objective_Basics/InventoryJSON/build/Debug/InventoryJSON; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,28 +36,7 @@
 		0A5933B11E0BAC28006AF1FF = {
 			isa = PBXGroup;
 			children = (
-				0A5933BC1E0BAC28006AF1FF /* InventoryJSON */,
-				0A5933BB1E0BAC28006AF1FF /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		0A5933BB1E0BAC28006AF1FF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0A5933BA1E0BAC28006AF1FF /* InventoryJSON */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		0A5933BC1E0BAC28006AF1FF /* InventoryJSON */ = {
-			isa = PBXGroup;
-			children = (
-				0A5933BD1E0BAC28006AF1FF /* main.m */,
-				0A5933C71E0BACB2006AF1FF /* mydata.json */,
-				0A5933C51E0BAC64006AF1FF /* Inventory.m */,
-				0A5933C41E0BAC47006AF1FF /* Inventory.h */,
-			);
-			path = InventoryJSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,7 +82,7 @@
 				en,
 			);
 			mainGroup = 0A5933B11E0BAC28006AF1FF;
-			productRefGroup = 0A5933BB1E0BAC28006AF1FF /* Products */;
+			productRefGroup = 0A5933B11E0BAC28006AF1FF;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -126,8 +96,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A5933C61E0BAC64006AF1FF /* Inventory.m in Sources */,
-				0A5933BE1E0BAC28006AF1FF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +222,7 @@
 				0A5933C31E0BAC28006AF1FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

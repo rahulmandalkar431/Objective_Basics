@@ -8,6 +8,12 @@
 
 #import<Foundation/Foundation.h>
 
-@interface inventory : NSObject
-
+@interface Inventory : NSObject
+    {
+        
+    }
+    @property (nonatomic,strong)NSString *name;
+    @property (nonatomic,strong)NSString *weight;
+    @property (nonatomic,strong)NSString *price;
+    -(void)get;
 @end

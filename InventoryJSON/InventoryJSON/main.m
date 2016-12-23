@@ -8,27 +8,33 @@
 
 #import <Foundation/Foundation.h>
 #import "Inventory.h"
+#import "SBJson5.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-    //    inventory *inv=[[inventory alloc]init];
-        NSData *data=[[NSData alloc]init];
-        NSError *error;
-        NSString *string_url=@"/Users/bridgelabz/Documents/Objective_Basics/InventoryJSON/InventoryJSON/mydata.json";
-        data=[NSData dataWithContentsOfFile:string_url options:NSDataReadingMappedIfSafe error:&error];
-          //NSURL *url=[NSURL URLWithString:string_url];
-        //NSString *string2=[NSString stringWithContentsOfFile:string_url encoding:NSUTF8StringEncoding error:&error];
-        //data=[string2 dataUsingEncoding:NSUTF8StringEncoding];
-      //  data = [data subdataWithRange:NSMakeRange(0, [data length] - 1)];
-        //NSLog(@"%@",data);
-       //NSData *data1=[string_url  dataUsingEncoding:NSUTF8StringEncoding];
-        NSMutableArray *jsondata;
-        jsondata=[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
-      
-            NSLog(@"%@",jsondata);
-       
-      //  NSMutableArray *mu=[[NSMutableArray alloc]init];
-      //  mu=jsondata;
+        NSError *r=nil;
+        NSString *strurl=@"/Users/bridgelabz/Documents/Objective_Basics/InventoryJSON/InventoryJSON/mydata.json";
         
+        NSString *content=[NSString stringWithContentsOfURL:[NSURL URLWithString:strurl]encoding:NSUTF8StringEncoding error:&r];
+  
+        NSArray *array=[content proxyForJson];
+        int i;
+        NSMutableArray *marray=[[NSMutableArray alloc]init];
+        
+        for (i=0; i<array.count; i++) {
+            NSDictionary *obj=array[i];
+           Inventory *inv=[[Inventory alloc]init];
+            inv.name=obj[@"name"];
+            inv.weight=obj[@"weight"];
+            inv.price=obj[@"price"];
+            [marray addObject:inv];
+            NSLog(@"Name:%@",inv.name);
+            NSLog(@"Name:%d",inv.weight);
+            NSLog(@"Name:%d",inv.price);
+            
+        }
+        
+ 
+       
     }
     return 0;
 }
