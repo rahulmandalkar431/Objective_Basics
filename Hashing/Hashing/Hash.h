@@ -10,9 +10,11 @@
 
 @interface Hash : NSObject
 {   int _current_item;
+    int _key;
     Hash *_next;
     int size;
 }
+@property (readwrite)int key;
 @property (readwrite)int currentValue;
 @property (retain)Hash *next;
 -(void)setsize:(int)size;
@@ -20,5 +22,6 @@
 -(void)addItem:(int)key andValue:(int)item andHash:(int[])newhash;
 -(void)insert:(int)insert_item;
 -(void)print;
+
 //-(void)
 @end

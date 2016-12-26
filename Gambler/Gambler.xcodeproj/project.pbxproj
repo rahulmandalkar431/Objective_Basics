@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A3F75911E0FE9E500E6CD00 /* New.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F75901E0FE9E500E6CD00 /* New.m */; };
-		0AFBE83A1E0BFC1100C2AECB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBE8391E0BFC1100C2AECB /* main.m */; };
-		0AFBE8421E0BFC3600C2AECB /* Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBE8411E0BFC3600C2AECB /* Hash.m */; };
+		0A0925321E10F0C000EBA099 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0925311E10F0C000EBA099 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0AFBE8341E0BFC1100C2AECB /* CopyFiles */ = {
+		0A09252C1E10F0C000EBA099 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,16 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A3F75901E0FE9E500E6CD00 /* New.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = New.m; sourceTree = "<group>"; };
-		0A3F75931E0FEA0600E6CD00 /* New.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = New.h; sourceTree = "<group>"; };
-		0AFBE8361E0BFC1100C2AECB /* Hashing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Hashing; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AFBE8391E0BFC1100C2AECB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0AFBE8401E0BFC2800C2AECB /* Hash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hash.h; sourceTree = "<group>"; };
-		0AFBE8411E0BFC3600C2AECB /* Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hash.m; sourceTree = "<group>"; };
+		0A09252E1E10F0C000EBA099 /* Gambler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Gambler; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A0925311E10F0C000EBA099 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0AFBE8331E0BFC1100C2AECB /* Frameworks */ = {
+		0A09252B1E10F0C000EBA099 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,101 +38,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AFBE82D1E0BFC1100C2AECB = {
+		0A0925251E10F0C000EBA099 = {
 			isa = PBXGroup;
 			children = (
-				0AFBE8381E0BFC1100C2AECB /* Hashing */,
-				0AFBE8371E0BFC1100C2AECB /* Products */,
+				0A0925301E10F0C000EBA099 /* Gambler */,
+				0A09252F1E10F0C000EBA099 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0AFBE8371E0BFC1100C2AECB /* Products */ = {
+		0A09252F1E10F0C000EBA099 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0AFBE8361E0BFC1100C2AECB /* Hashing */,
+				0A09252E1E10F0C000EBA099 /* Gambler */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0AFBE8381E0BFC1100C2AECB /* Hashing */ = {
+		0A0925301E10F0C000EBA099 /* Gambler */ = {
 			isa = PBXGroup;
 			children = (
-				0AFBE8391E0BFC1100C2AECB /* main.m */,
-				0AFBE8411E0BFC3600C2AECB /* Hash.m */,
-				0A3F75931E0FEA0600E6CD00 /* New.h */,
-				0A3F75901E0FE9E500E6CD00 /* New.m */,
-				0AFBE8401E0BFC2800C2AECB /* Hash.h */,
+				0A0925311E10F0C000EBA099 /* main.m */,
 			);
-			path = Hashing;
+			path = Gambler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0AFBE8351E0BFC1100C2AECB /* Hashing */ = {
+		0A09252D1E10F0C000EBA099 /* Gambler */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AFBE83D1E0BFC1100C2AECB /* Build configuration list for PBXNativeTarget "Hashing" */;
+			buildConfigurationList = 0A0925351E10F0C000EBA099 /* Build configuration list for PBXNativeTarget "Gambler" */;
 			buildPhases = (
-				0AFBE8321E0BFC1100C2AECB /* Sources */,
-				0AFBE8331E0BFC1100C2AECB /* Frameworks */,
-				0AFBE8341E0BFC1100C2AECB /* CopyFiles */,
+				0A09252A1E10F0C000EBA099 /* Sources */,
+				0A09252B1E10F0C000EBA099 /* Frameworks */,
+				0A09252C1E10F0C000EBA099 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Hashing;
-			productName = Hashing;
-			productReference = 0AFBE8361E0BFC1100C2AECB /* Hashing */;
+			name = Gambler;
+			productName = Gambler;
+			productReference = 0A09252E1E10F0C000EBA099 /* Gambler */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0AFBE82E1E0BFC1100C2AECB /* Project object */ = {
+		0A0925261E10F0C000EBA099 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "BridgeLabz Solutions LLP";
 				TargetAttributes = {
-					0AFBE8351E0BFC1100C2AECB = {
+					0A09252D1E10F0C000EBA099 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 0AFBE8311E0BFC1100C2AECB /* Build configuration list for PBXProject "Hashing" */;
+			buildConfigurationList = 0A0925291E10F0C000EBA099 /* Build configuration list for PBXProject "Gambler" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 0AFBE82D1E0BFC1100C2AECB;
-			productRefGroup = 0AFBE8371E0BFC1100C2AECB /* Products */;
+			mainGroup = 0A0925251E10F0C000EBA099;
+			productRefGroup = 0A09252F1E10F0C000EBA099 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0AFBE8351E0BFC1100C2AECB /* Hashing */,
+				0A09252D1E10F0C000EBA099 /* Gambler */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0AFBE8321E0BFC1100C2AECB /* Sources */ = {
+		0A09252A1E10F0C000EBA099 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A3F75911E0FE9E500E6CD00 /* New.m in Sources */,
-				0AFBE83A1E0BFC1100C2AECB /* main.m in Sources */,
-				0AFBE8421E0BFC3600C2AECB /* Hash.m in Sources */,
+				0A0925321E10F0C000EBA099 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0AFBE83B1E0BFC1100C2AECB /* Debug */ = {
+		0A0925331E10F0C000EBA099 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -185,7 +173,7 @@
 			};
 			name = Debug;
 		};
-		0AFBE83C1E0BFC1100C2AECB /* Release */ = {
+		0A0925341E10F0C000EBA099 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -225,14 +213,14 @@
 			};
 			name = Release;
 		};
-		0AFBE83E1E0BFC1100C2AECB /* Debug */ = {
+		0A0925361E10F0C000EBA099 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		0AFBE83F1E0BFC1100C2AECB /* Release */ = {
+		0A0925371E10F0C000EBA099 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -242,25 +230,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0AFBE8311E0BFC1100C2AECB /* Build configuration list for PBXProject "Hashing" */ = {
+		0A0925291E10F0C000EBA099 /* Build configuration list for PBXProject "Gambler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0AFBE83B1E0BFC1100C2AECB /* Debug */,
-				0AFBE83C1E0BFC1100C2AECB /* Release */,
+				0A0925331E10F0C000EBA099 /* Debug */,
+				0A0925341E10F0C000EBA099 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0AFBE83D1E0BFC1100C2AECB /* Build configuration list for PBXNativeTarget "Hashing" */ = {
+		0A0925351E10F0C000EBA099 /* Build configuration list for PBXNativeTarget "Gambler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0AFBE83E1E0BFC1100C2AECB /* Debug */,
-				0AFBE83F1E0BFC1100C2AECB /* Release */,
+				0A0925361E10F0C000EBA099 /* Debug */,
+				0A0925371E10F0C000EBA099 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0AFBE82E1E0BFC1100C2AECB /* Project object */;
+	rootObject = 0A0925261E10F0C000EBA099 /* Project object */;
 }
