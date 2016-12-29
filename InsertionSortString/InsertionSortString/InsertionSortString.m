@@ -34,19 +34,25 @@
     }
     
     
-    for(i=1;i<data.count;i++)
+    NSComparisonResult result;
+    
+    for(i=1;i<[array count];i++)
     {
-      
-        NSString* value=string[i];
-        int holep=i;
-       
-        while (holep>0 && string[holep-1]>value)
+        NSString *key1=string[i];
+        
+        int j=i-1;
+        
+        while (j>=0)
         {
-           string[holep]=string[holep-1];
-            holep=holep-1;
+            result=[key1 compare:string[j]];
+            if (result>0) {
+                break;
+            }
+            string[j+1]=string[j];
+            j--;
         }
-        string[holep]=value;
-
+        string[j+1]=key1;
+        
         
     }
     
