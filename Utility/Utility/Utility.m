@@ -141,20 +141,24 @@ int data[max];
         string[i]=str;
     }
     
-    
+    NSComparisonResult result;
     
     for(i=1;i<max;i++)
     {
+        NSString *key1=string[i];
         
-        NSString* value=string[i];
-        int holep=i;
-        
-        while (holep>0 && string[holep-1]>value)
+        int j=i-1;
+   
+        while (j>=0)
         {
-            string[holep]=string[holep-1];
-            holep=holep-1;
+            result=[key1 compare:string[j]];
+            if (result>0) {
+                break;
+            }
+            string[j+1]=string[j];
+            j--;
         }
-        string[holep]=value;
+        string[j+1]=key1;
         
         
     }
@@ -191,6 +195,7 @@ int data[max];
 }
 -(void)BoubleSortString{
     char character[20];
+    NSComparisonResult result;
     NSString *string[max];
     int i,j;
     NSString *temp;
@@ -205,7 +210,8 @@ int data[max];
     for(i=0;i<max-1;i++)
     {
         for(j=0;j<max-i-1;j++){
-            if([string[0] compare:string[1]]>0)                    //string[j]>string[j+1]
+            result=[string[j] compare:string[j+1]];
+            if(result>0)                    //string[j]>string[j+1]
             {
                 temp=string[j];
                 string[j]=string[j+1];
