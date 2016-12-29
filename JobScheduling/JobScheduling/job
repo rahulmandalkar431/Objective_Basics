@@ -1,0 +1,71 @@
+
+#import <Foundation/Foundation.h>
+
+#define maxi 5
+int main(int argc, const char * argv[]) {
+@autoreleasepool {
+int p=0;
+int task[maxi];
+int deadline[maxi];
+int minute[maxi];
+int starttime[maxi];
+int finishtime[maxi];
+int lateness[maxi];
+//task[0]=2,task[1]=1,task[2]=5,task[3]=3,task[4]=4;
+printf("\nEnter 5 dealine:");
+for (int i=0; i<maxi; i++) {
+
+scanf("%d",&deadline[i]);
+task[i]=i+1;
+}
+printf("\nEnter 5 minute:");
+for (int i=0; i<maxi; i++) {
+
+scanf("%d",&minute[i]);
+
+}
+//-------------------------------
+
+//--------------------------
+//starttime[0]=0;
+for (int i=0; i<maxi; i++) {
+
+
+for (int j=1; j<=task[i]-1; j++) {
+p=p+minute[j];
+}
+starttime[i]=p;
+
+
+}
+
+
+//---------------------------
+for (int i=0; i<maxi; i++) {
+
+finishtime[i]=starttime[i]+minute[i];
+}
+//----------------------
+for (int i=0; i<maxi; i++) {
+
+lateness[i]=finishtime[i]-deadline[i];
+}
+printf("\nStarttime\t\tFinishtime");
+printf("\n---------------------------------");
+for (int i=0; i<maxi; i++) {
+
+printf("\n%d\t\t%d\n",starttime[i],finishtime[i]);
+}
+printf("\n---------------------------------");
+
+printf("\nTask\t\tDeadline\t\tMinute\t\tOvershootTime");
+printf("\n---------------------------------");
+for (int i=0; i<maxi; i++) {
+
+printf("\n%d\t\t\t\%d\t\t\t%d\t\t%d\n",task[i],deadline[i],minute[i],lateness[i]);
+}
+printf("\n---------------------------------");
+
+}
+return 0;
+}

@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A3F75911E0FE9E500E6CD00 /* New.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F75901E0FE9E500E6CD00 /* New.m */; };
+		0A466A1B1E14CAB600CC3F4C /* Hashclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A466A1A1E14CAB600CC3F4C /* Hashclass.m */; };
 		0AFBE83A1E0BFC1100C2AECB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBE8391E0BFC1100C2AECB /* main.m */; };
-		0AFBE8421E0BFC3600C2AECB /* Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBE8411E0BFC3600C2AECB /* Hash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,10 +27,10 @@
 /* Begin PBXFileReference section */
 		0A3F75901E0FE9E500E6CD00 /* New.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = New.m; sourceTree = "<group>"; };
 		0A3F75931E0FEA0600E6CD00 /* New.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = New.h; sourceTree = "<group>"; };
+		0A466A1A1E14CAB600CC3F4C /* Hashclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hashclass.m; sourceTree = "<group>"; };
+		0A466A1C1E14CAEB00CC3F4C /* Hashclass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hashclass.h; sourceTree = "<group>"; };
 		0AFBE8361E0BFC1100C2AECB /* Hashing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Hashing; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFBE8391E0BFC1100C2AECB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0AFBE8401E0BFC2800C2AECB /* Hash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hash.h; sourceTree = "<group>"; };
-		0AFBE8411E0BFC3600C2AECB /* Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hash.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				0AFBE8391E0BFC1100C2AECB /* main.m */,
-				0AFBE8411E0BFC3600C2AECB /* Hash.m */,
 				0A3F75931E0FEA0600E6CD00 /* New.h */,
+				0A466A1A1E14CAB600CC3F4C /* Hashclass.m */,
+				0A466A1C1E14CAEB00CC3F4C /* Hashclass.h */,
 				0A3F75901E0FE9E500E6CD00 /* New.m */,
-				0AFBE8401E0BFC2800C2AECB /* Hash.h */,
 			);
 			path = Hashing;
 			sourceTree = "<group>";
@@ -131,7 +131,7 @@
 			files = (
 				0A3F75911E0FE9E500E6CD00 /* New.m in Sources */,
 				0AFBE83A1E0BFC1100C2AECB /* main.m in Sources */,
-				0AFBE8421E0BFC3600C2AECB /* Hash.m in Sources */,
+				0A466A1B1E14CAB600CC3F4C /* Hashclass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
